@@ -34,7 +34,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto mb-10"
         >
-          SaaS и Telegram mini-apps с использованием AI-агентов.
+          SaaS и Telegram mini-apps с использованием AI-агентов.{" "}
           <br className="hidden sm:block" />
           Быстрее, современнее, с заботой о каждой детали.
         </motion.p>
