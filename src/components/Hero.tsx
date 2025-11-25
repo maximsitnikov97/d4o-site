@@ -15,7 +15,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8"
         >
           <Sparkles size={16} className="text-primary" />
-          <span className="text-sm text-text-muted">AI-ускоренная разработка</span>
+          <span className="text-sm text-text-muted">AI-оптимизация сроков</span>
         </motion.div>
 
         <motion.h1
