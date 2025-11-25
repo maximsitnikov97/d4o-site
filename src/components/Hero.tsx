@@ -75,7 +75,7 @@ export function Hero() {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <span className="text-sm">Свой проданный сервис</span>
+            <span className="text-sm">Кейс: продажа Saas платформы за 7,5 млн.</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-secondary" />
