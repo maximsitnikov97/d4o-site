@@ -29,7 +29,7 @@ export function CTA() {
           </h2>
 
           <p className="text-text-muted text-lg mb-10 max-w-2xl mx-auto">
-            Напиши в Telegram — посчитаем стоимость и составим техническое задание.
+            Напиши в Telegram — посчитаем стоимость и составим техническое задание.{" "}
             <br className="hidden sm:block" />
             Это бесплатно и ни к чему не обязывает.
           </p>
