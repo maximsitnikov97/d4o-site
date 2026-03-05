@@ -1,0 +1,79 @@
+{
+  "d4o": {
+    "published": [],
+    "queue": [
+      {
+        "id": 1,
+        "slug": "skolko-stoit-razrabotka-telegram-bota-2026",
+        "title": "Сколько стоит разработка Telegram бота в 2026",
+        "mainKeyword": "разработка telegram бота цена",
+        "additionalKeywords": ["стоимость telegram бота", "цена telegram mini app", "заказать telegram бота", "telegram бот на заказ стоимость"],
+        "category": "telegram",
+        "competitors": []
+      },
+      {
+        "id": 2,
+        "slug": "telegram-mini-app-vs-mobilnoe-prilozhenie",
+        "title": "Telegram Mini-App vs мобильное приложение — что выбрать",
+        "mainKeyword": "telegram mini app vs мобильное приложение",
+        "additionalKeywords": ["telegram mini app или приложение", "сравнение telegram mini app", "стоит ли делать telegram mini app"],
+        "category": "telegram",
+        "competitors": []
+      },
+      {
+        "id": 3,
+        "slug": "kak-integriovat-oplatu-v-telegram-mini-app",
+        "title": "Как интегрировать оплату в Telegram Mini-App",
+        "mainKeyword": "оплата в telegram mini app",
+        "additionalKeywords": ["telegram mini app платежи", "telegram stars оплата", "юкасса telegram bot"],
+        "category": "telegram",
+        "competitors": []
+      },
+      {
+        "id": 4,
+        "slug": "kak-zapustit-saas-produkt-mvp",
+        "title": "Как запустить SaaS-продукт: от идеи до MVP",
+        "mainKeyword": "разработка mvp saas",
+        "additionalKeywords": ["как запустить saas", "mvp для стартапа", "разработка mvp на заказ", "сколько стоит mvp"],
+        "category": "saas",
+        "competitors": []
+      },
+      {
+        "id": 5,
+        "slug": "produktovyy-vs-proektnyy-podhod",
+        "title": "Продуктовый подход vs проектный — что эффективнее для бизнеса",
+        "mainKeyword": "продуктовая разработка на заказ",
+        "additionalKeywords": ["продуктовый подход разработка", "it агентство или инхаус", "заказная разработка"],
+        "category": "saas",
+        "competitors": []
+      },
+      {
+        "id": 6,
+        "slug": "avtomatizaciya-dlya-sellerov-wildberries",
+        "title": "Автоматизация для селлеров Wildberries — обзор инструментов 2026",
+        "mainKeyword": "автоматизация для wildberries",
+        "additionalKeywords": ["инструменты для селлеров wildberries", "сервис для маркетплейсов", "автоматизация маркетплейсов"],
+        "category": "marketplace",
+        "competitors": []
+      },
+      {
+        "id": 7,
+        "slug": "kak-vnedrit-ai-v-biznes",
+        "title": "Как внедрить AI в бизнес-процессы: практический гайд",
+        "mainKeyword": "ai интеграция в бизнес",
+        "additionalKeywords": ["внедрение искусственного интеллекта", "ai для бизнеса", "автоматизация с ai", "ai чат бот для бизнеса"],
+        "category": "ai",
+        "competitors": []
+      },
+      {
+        "id": 8,
+        "slug": "ai-uskorennaya-razrabotka",
+        "title": "AI-ускоренная разработка — как это экономит бюджет клиента",
+        "mainKeyword": "ai разработка на заказ",
+        "additionalKeywords": ["разработка с искусственным интеллектом", "ai ускоренная разработка", "дешевая разработка с ai"],
+        "category": "ai",
+        "competitors": []
+      }
+    ]
+  }
+}
