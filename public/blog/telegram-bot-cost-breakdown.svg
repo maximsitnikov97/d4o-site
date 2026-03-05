@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1210"/>
+      <stop offset="100%" stop-color="#0F1A14"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#bg)" rx="20"/>
+  <rect x="1" y="1" width="1198" height="498" fill="none" stroke="#22C55E" stroke-opacity="0.12" rx="20"/>
+
+  <!-- Title -->
+  <text x="600" y="56" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#F0FDF4">Из чего складывается стоимость разработки Telegram бота</text>
+  <line x1="360" y1="70" x2="840" y2="70" stroke="#22C55E" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Bar: Backend 45% -->
+  <text x="100" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#D1FAE5">Backend-разработка</text>
+  <rect x="320" y="108" width="630" height="32" rx="8" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="320" y="108" width="630" height="32" rx="8" fill="url(#bar1)" fill-opacity="0.85"/>
+  <text x="964" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#4ADE80">45%</text>
+
+  <!-- Bar: Integrations 25% -->
+  <text x="100" y="188" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#D1FAE5">Интеграции</text>
+  <rect x="320" y="168" width="350" height="32" rx="8" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="320" y="168" width="350" height="32" rx="8" fill="url(#bar1)" fill-opacity="0.65"/>
+  <text x="684" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#4ADE80">25%</text>
+
+  <!-- Bar: Analytics 15% -->
+  <text x="100" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#D1FAE5">Аналитика и проектирование</text>
+  <rect x="320" y="228" width="210" height="32" rx="8" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="320" y="228" width="210" height="32" rx="8" fill="url(#bar1)" fill-opacity="0.5"/>
+  <text x="544" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#4ADE80">15%</text>
+
+  <!-- Bar: Testing 10% -->
+  <text x="100" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#D1FAE5">Тестирование</text>
+  <rect x="320" y="288" width="140" height="32" rx="8" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="320" y="288" width="140" height="32" rx="8" fill="url(#bar1)" fill-opacity="0.4"/>
+  <text x="474" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#4ADE80">10%</text>
+
+  <!-- Bar: Deploy 5% -->
+  <text x="100" y="368" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#D1FAE5">Деплой и инфраструктура</text>
+  <rect x="320" y="348" width="70" height="32" rx="8" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="320" y="348" width="70" height="32" rx="8" fill="url(#bar1)" fill-opacity="0.3"/>
+  <text x="404" y="370" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#4ADE80">5%</text>
+
+  <!-- Note -->
+  <text x="100" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6EE7A0" opacity="0.6">* Распределение ориентировочное для бота среднего уровня с 2–3 интеграциями</text>
+
+  <!-- D4O badge -->
+  <text x="1100" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#22C55E" opacity="0.4">d4o.tech</text>
+</svg>
