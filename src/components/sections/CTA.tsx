@@ -16,13 +16,33 @@ export function CTA() {
   const [message, setMessage] = useState("");
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !contact.trim()) return;
 
-    // TODO: подключить реальный бэкенд/бота для отправки заявок
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, contact, message }),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Не удалось отправить. Попробуйте написать в Telegram.");
+      }
+    } catch {
+      setError("Ошибка сети. Попробуйте написать в Telegram.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -75,10 +95,14 @@ export function CTA() {
                 className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-forest/50 resize-none"
               />
 
+              {error && (
+                <p className="text-sm text-red-400">{error}</p>
+              )}
+
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <Button type="submit" size="default" className="flex-1 w-full">
+                <Button type="submit" size="default" className="flex-1 w-full" disabled={loading}>
                   <Send className="mr-2 h-4 w-4" />
-                  Отправить заявку
+                  {loading ? "Отправка..." : "Отправить заявку"}
                 </Button>
                 <Button asChild variant="outline" size="default" className="flex-1 w-full">
                   <a href="https://t.me/masitnikov" target="_blank" rel="noopener noreferrer">
