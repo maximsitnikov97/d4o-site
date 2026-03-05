@@ -65,8 +65,13 @@ export function CTA() {
           </motion.div>
 
           {submitted ? (
-            <motion.div variants={fadeUp} className="text-center py-8">
-              <p className="text-lg font-semibold text-primary mb-2">Заявка отправлена!</p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center py-8"
+            >
+              <p className="text-2xl font-bold mb-3">Спасибо за заявку!</p>
               <p className="text-muted-foreground">Свяжемся с вами в течение часа</p>
             </motion.div>
           ) : (
