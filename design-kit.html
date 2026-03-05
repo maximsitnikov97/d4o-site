@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D4O Design Kit — Шрифты & Эффекты</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Syne:wght@400;700;800&family=Outfit:wght@400;600;700;800&family=Oxanium:wght@400;600;700;800&family=Onest:wght@400;600;700;800&family=Geologica:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Deep Forest palette */
+      --bg-dark: #080C0A;
+      --bg-surface: #0F1A14;
+      --bg-surface-light: #162419;
+      --primary: #166534;
+      --primary-light: #22C55E;
+      --bright: #4ADE80;
+      --accent: #86EFAC;
+      --text: #F0FDF4;
+      --text-muted: #86EFAC99;
+      --border: #166534;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text);
+      font-family: 'Geologica', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    h1.page-title {
+      font-family: 'Geologica', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--bright);
+      margin-bottom: 8px;
+    }
+
+    .page-subtitle {
+      font-family: 'Geologica', sans-serif;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 60px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--bright);
+      background: rgba(74, 222, 128, 0.1);
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 40px;
+    }
+
+    /* ===== SECTION A: FONT COMPARISON ===== */
+    .font-block {
+      margin-bottom: 80px;
+      padding: 40px;
+      background: var(--bg-surface);
+      border: 1px solid rgba(22, 101, 52, 0.3);
+      border-radius: 16px;
+    }
+
+    .font-block__name {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--bright);
+      margin-bottom: 8px;
+      font-family: 'Geologica', sans-serif;
+    }
+
+    .font-block__meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      font-family: 'Geologica', sans-serif;
+    }
+
+    .font-block h2 { font-size: 56px; line-height: 1.1; margin-bottom: 12px; }
+    .font-block h3 { font-size: 36px; line-height: 1.2; margin-bottom: 12px; }
+    .font-block h4 { font-size: 24px; line-height: 1.3; margin-bottom: 24px; }
+
+    .font-block .body-sample {
+      font-family: 'Geologica', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin-bottom: 32px;
+    }
+
+    .font-pair {
+      padding-top: 32px;
+      border-top: 1px solid rgba(22, 101, 52, 0.2);
+    }
+
+    .font-pair h3 { margin-bottom: 8px; }
+    .font-pair p {
+      font-family: 'Geologica', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    /* Font families */
+    .font-unbounded h2, .font-unbounded h3, .font-unbounded h4 { font-family: 'Unbounded', cursive; }
+    .font-syne h2, .font-syne h3, .font-syne h4 { font-family: 'Syne', sans-serif; font-weight: 800; }
+    .font-outfit h2, .font-outfit h3, .font-outfit h4 { font-family: 'Outfit', sans-serif; font-weight: 700; }
+    .font-oxanium h2, .font-oxanium h3, .font-oxanium h4 { font-family: 'Oxanium', cursive; font-weight: 700; }
+    .font-onest h2, .font-onest h3, .font-onest h4 { font-family: 'Onest', sans-serif; font-weight: 700; }
+
+    /* ===== SECTION B: MAGIC UI EFFECTS ===== */
+    .effects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .effect-card {
+      position: relative;
+      background: var(--bg-surface);
+      border: 1px solid rgba(22, 101, 52, 0.3);
+      border-radius: 16px;
+      padding: 32px;
+      overflow: hidden;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .effect-card__title {
+      font-family: 'Geologica', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--text);
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .effect-card__desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      position: relative;
+      z-index: 2;
+      line-height: 1.5;
+    }
+
+    /* --- Particles --- */
+    .effect-particles .particles-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    .effect-particles .particle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: var(--bright);
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 4s ease-in-out infinite;
+    }
+    .effect-particles .particle:nth-child(1) { top: 15%; left: 20%; animation-delay: 0s; }
+    .effect-particles .particle:nth-child(2) { top: 40%; left: 60%; animation-delay: 0.8s; }
+    .effect-particles .particle:nth-child(3) { top: 70%; left: 35%; animation-delay: 1.6s; }
+    .effect-particles .particle:nth-child(4) { top: 25%; left: 80%; animation-delay: 2.4s; }
+    .effect-particles .particle:nth-child(5) { top: 60%; left: 15%; animation-delay: 0.4s; }
+    .effect-particles .particle:nth-child(6) { top: 50%; left: 45%; animation-delay: 1.2s; }
+    .effect-particles .particle:nth-child(7) { top: 80%; left: 70%; animation-delay: 2.0s; }
+    .effect-particles .particle:nth-child(8) { top: 10%; left: 50%; animation-delay: 3.0s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+      50% { transform: translateY(-12px) scale(1.3); opacity: 1; }
+    }
+
+    /* --- Flickering Grid --- */
+    .effect-flickering-grid .grid-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 2px;
+      padding: 8px;
+      opacity: 0.4;
+    }
+    .grid-cell {
+      background: var(--primary);
+      border-radius: 2px;
+      animation: flicker 3s ease-in-out infinite;
+    }
+    .grid-cell:nth-child(2n) { animation-delay: 0.3s; }
+    .grid-cell:nth-child(3n) { animation-delay: 0.7s; }
+    .grid-cell:nth-child(5n) { animation-delay: 1.1s; }
+    .grid-cell:nth-child(7n) { animation-delay: 1.5s; }
+    .grid-cell:nth-child(11n) { animation-delay: 2.0s; }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+
+    /* --- Border Beam --- */
+    .effect-border-beam { overflow: hidden; }
+    .effect-border-beam::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      padding: 1px;
+      background: conic-gradient(from var(--beam-angle, 0deg), transparent 0%, transparent 70%, var(--bright) 80%, transparent 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      animation: beam-rotate 3s linear infinite;
+      z-index: 1;
+    }
+    @keyframes beam-rotate { 0% { --beam-angle: 0deg; } 100% { --beam-angle: 360deg; } }
+    @property --beam-angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+
+    /* --- Magic Card (Spotlight) --- */
+    .effect-magic-card { cursor: pointer; transition: background 0.3s; }
+    .effect-magic-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      background: radial-gradient(circle at 70% 30%, rgba(74, 222, 128, 0.15), transparent 60%);
+      z-index: 1;
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+    .effect-magic-card:hover::before { opacity: 1; }
+
+    /* --- Aurora Text --- */
+    .effect-aurora-text .aurora-text {
+      font-family: 'Geologica', sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      background: linear-gradient(90deg, var(--bright), var(--primary-light), var(--accent), var(--bright));
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: aurora 4s ease-in-out infinite;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 16px;
+    }
+    @keyframes aurora { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+
+    /* --- Ripple --- */
+    .effect-ripple .ripple-container {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ripple-ring {
+      position: absolute;
+      border: 1px solid var(--bright);
+      border-radius: 50%;
+      opacity: 0;
+      animation: ripple-expand 3s ease-out infinite;
+    }
+    .ripple-ring:nth-child(1) { animation-delay: 0s; }
+    .ripple-ring:nth-child(2) { animation-delay: 0.6s; }
+    .ripple-ring:nth-child(3) { animation-delay: 1.2s; }
+    .ripple-ring:nth-child(4) { animation-delay: 1.8s; }
+    @keyframes ripple-expand { 0% { width: 20px; height: 20px; opacity: 0.6; } 100% { width: 200px; height: 200px; opacity: 0; } }
+
+    /* --- Meteors --- */
+    .effect-meteors .meteor {
+      position: absolute;
+      width: 2px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--bright), transparent);
+      border-radius: 2px;
+      z-index: 1;
+      opacity: 0;
+      animation: meteor-fall 2s linear infinite;
+      transform: rotate(-45deg);
+    }
+    .effect-meteors .meteor:nth-child(1) { top: -20px; left: 20%; animation-delay: 0s; }
+    .effect-meteors .meteor:nth-child(2) { top: -20px; left: 50%; animation-delay: 0.7s; }
+    .effect-meteors .meteor:nth-child(3) { top: -20px; left: 80%; animation-delay: 1.4s; }
+    .effect-meteors .meteor:nth-child(4) { top: -20px; left: 35%; animation-delay: 2.1s; }
+    @keyframes meteor-fall { 0% { transform: rotate(-45deg) translateY(0); opacity: 1; } 100% { transform: rotate(-45deg) translateY(300px); opacity: 0; } }
+
+    /* --- Shine Border --- */
+    .effect-shine-border { overflow: hidden; }
+    .effect-shine-border::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--bright), transparent 40%, transparent 60%, var(--primary-light));
+      animation: shine-rotate 3s linear infinite;
+      z-index: 0;
+    }
+    .effect-shine-border::after {
+      content: '';
+      position: absolute;
+      inset: 1px;
+      border-radius: 15px;
+      background: var(--bg-surface);
+      z-index: 1;
+    }
+    .effect-shine-border .effect-card__title,
+    .effect-shine-border .effect-card__desc { z-index: 3; }
+    @keyframes shine-rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* --- Divider --- */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      margin: 80px 0;
+    }
+
+    /* --- Color palette --- */
+    .palette { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 60px; }
+    .palette-swatch {
+      width: 100px;
+      height: 80px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .palette-swatch span { font-size: 10px; opacity: 0.7; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">D4O Design Kit</h1>
+    <p class="page-subtitle">Deep Forest тема · Сравнение display-шрифтов · Превью Magic UI эффектов</p>
+
+    <!-- Color Palette -->
+    <div class="section-label">Палитра Deep Forest</div>
+    <div class="palette">
+      <div class="palette-swatch" style="background:#080C0A;border:1px solid #166534;color:#F0FDF4;">BG Dark<span>#080C0A</span></div>
+      <div class="palette-swatch" style="background:#0F1A14;border:1px solid #166534;color:#F0FDF4;">Surface<span>#0F1A14</span></div>
+      <div class="palette-swatch" style="background:#162419;border:1px solid #166534;color:#F0FDF4;">Surface Lt<span>#162419</span></div>
+      <div class="palette-swatch" style="background:#166534;color:#F0FDF4;">Primary<span>#166534</span></div>
+      <div class="palette-swatch" style="background:#22C55E;color:#080C0A;">Primary Lt<span>#22C55E</span></div>
+      <div class="palette-swatch" style="background:#4ADE80;color:#080C0A;">Bright<span>#4ADE80</span></div>
+      <div class="palette-swatch" style="background:#86EFAC;color:#080C0A;">Accent<span>#86EFAC</span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ===== SECTION A: FONT COMPARISON ===== -->
+    <div class="section-label">A · Display-шрифты + Geologica body</div>
+
+    <!-- 1. Unbounded -->
+    <div class="font-block font-unbounded">
+      <div class="font-block__name">1. Unbounded</div>
+      <div class="font-block__meta">Rounded geometric · Variable · Google Fonts</div>
+      <h2>Разрабатываем как для себя</h2>
+      <h3>SaaS-платформы & Telegram Mini-Apps</h3>
+      <h4>AI-ускорение, премиальное качество</h4>
+      <p class="body-sample">Мы создаём цифровые продукты с такой же тщательностью и вниманием к деталям, как если бы делали их для собственного бизнеса. Каждая строчка кода написана с любовью и профессионализмом.</p>
+      <div class="font-pair">
+        <h3>Четыре этапа до запуска</h3>
+        <p>Наш процесс разработки отточен годами практики. От первого созвона до релиза — каждый этап прозрачен и предсказуем.</p>
+      </div>
+    </div>
+
+    <!-- 2. Syne -->
+    <div class="font-block font-syne">
+      <div class="font-block__name">2. Syne</div>
+      <div class="font-block__meta">Expressive · Wide · Extra Bold · Google Fonts</div>
+      <h2>Разрабатываем как для себя</h2>
+      <h3>SaaS-платформы & Telegram Mini-Apps</h3>
+      <h4>AI-ускорение, премиальное качество</h4>
+      <p class="body-sample">Мы создаём цифровые продукты с такой же тщательностью и вниманием к деталям, как если бы делали их для собственного бизнеса. Каждая строчка кода написана с любовью и профессионализмом.</p>
+      <div class="font-pair">
+        <h3>Четыре этапа до запуска</h3>
+        <p>Наш процесс разработки отточен годами практики. От первого созвона до релиза — каждый этап прозрачен и предсказуем.</p>
+      </div>
+    </div>
+
+    <!-- 3. Outfit -->
+    <div class="font-block font-outfit">
+      <div class="font-block__name">3. Outfit</div>
+      <div class="font-block__meta">Modern rounded geometric · Variable · Google Fonts</div>
+      <h2>Разрабатываем как для себя</h2>
+      <h3>SaaS-платформы & Telegram Mini-Apps</h3>
+      <h4>AI-ускорение, премиальное качество</h4>
+      <p class="body-sample">Мы создаём цифровые продукты с такой же тщательностью и вниманием к деталям, как если бы делали их для собственного бизнеса. Каждая строчка кода написана с любовью и профессионализмом.</p>
+      <div class="font-pair">
+        <h3>Четыре этапа до запуска</h3>
+        <p>Наш процесс разработки отточен годами практики. От первого созвона до релиза — каждый этап прозрачен и предсказуем.</p>
+      </div>
+    </div>
+
+    <!-- 4. Oxanium -->
+    <div class="font-block font-oxanium">
+      <div class="font-block__name">4. Oxanium</div>
+      <div class="font-block__meta">Squared futuristic · Sci-fi · Google Fonts</div>
+      <h2>Разрабатываем как для себя</h2>
+      <h3>SaaS-платформы & Telegram Mini-Apps</h3>
+      <h4>AI-ускорение, премиальное качество</h4>
+      <p class="body-sample">Мы создаём цифровые продукты с такой же тщательностью и вниманием к деталям, как если бы делали их для собственного бизнеса. Каждая строчка кода написана с любовью и профессионализмом.</p>
+      <div class="font-pair">
+        <h3>Четыре этапа до запуска</h3>
+        <p>Наш процесс разработки отточен годами практики. От первого созвона до релиза — каждый этап прозрачен и предсказуем.</p>
+      </div>
+    </div>
+
+    <!-- 5. Onest -->
+    <div class="font-block font-onest">
+      <div class="font-block__name">5. Onest</div>
+      <div class="font-block__meta">Geometric + humanist hybrid · Variable · Google Fonts</div>
+      <h2>Разрабатываем как для себя</h2>
+      <h3>SaaS-платформы & Telegram Mini-Apps</h3>
+      <h4>AI-ускорение, премиальное качество</h4>
+      <p class="body-sample">Мы создаём цифровые продукты с такой же тщательностью и вниманием к деталям, как если бы делали их для собственного бизнеса. Каждая строчка кода написана с любовью и профессионализмом.</p>
+      <div class="font-pair">
+        <h3>Четыре этапа до запуска</h3>
+        <p>Наш процесс разработки отточен годами практики. От первого созвона до релиза — каждый этап прозрачен и предсказуем.</p>
+      </div>
+    </div>
+
+    

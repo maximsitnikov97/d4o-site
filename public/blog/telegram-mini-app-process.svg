@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1210"/>
+      <stop offset="100%" stop-color="#0F1A14"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="520" fill="url(#bg2)" rx="24"/>
+  <rect width="1200" height="520" fill="none" stroke="#22C55E" stroke-opacity="0.15" rx="24"/>
+
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#F0FDF4">
+    Этапы разработки Telegram Mini-App
+  </text>
+  <text x="600" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#F0FDF4" fill-opacity="0.5">
+    От идеи до запуска — 4–6 недель
+  </text>
+
+  <!-- Connecting line -->
+  <line x1="155" y1="180" x2="1045" y2="180" stroke="#22C55E" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <!-- Step 1 -->
+  <rect x="40" y="120" width="260" height="120" rx="16" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="40" y="120" width="260" height="120" rx="16" stroke="#22C55E" stroke-opacity="0.2"/>
+  <circle cx="74" cy="154" r="20" fill="#22C55E" fill-opacity="0.15"/>
+  <text x="74" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#22C55E">1</text>
+  <text x="104" y="160" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#F0FDF4">Аналитика</text>
+  <text x="64" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">Задачи бизнеса, сценарии</text>
+  <text x="64" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">пользователей, прототипы</text>
+  <!-- Timeline -->
+  <rect x="64" y="226" width="80" height="4" rx="2" fill="#22C55E" fill-opacity="0.3"/>
+  <text x="152" y="232" font-family="system-ui, sans-serif" font-size="11" fill="#22C55E" fill-opacity="0.7">1 неделя</text>
+
+  <!-- Arrow 1-2 -->
+  <text x="318" y="184" font-family="system-ui, sans-serif" font-size="20" fill="#22C55E" fill-opacity="0.4">→</text>
+
+  <!-- Step 2 -->
+  <rect x="340" y="120" width="260" height="120" rx="16" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="340" y="120" width="260" height="120" rx="16" stroke="#22C55E" stroke-opacity="0.2"/>
+  <circle cx="374" cy="154" r="20" fill="#22C55E" fill-opacity="0.15"/>
+  <text x="374" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#22C55E">2</text>
+  <text x="404" y="160" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#F0FDF4">Дизайн и разработка</text>
+  <text x="364" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">UI/UX, фронтенд React,</text>
+  <text x="364" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">бэкенд Node.js + PostgreSQL</text>
+  <rect x="364" y="226" width="140" height="4" rx="2" fill="#22C55E" fill-opacity="0.3"/>
+  <text x="512" y="232" font-family="system-ui, sans-serif" font-size="11" fill="#22C55E" fill-opacity="0.7">2–3 недели</text>
+
+  <!-- Arrow 2-3 -->
+  <text x="618" y="184" font-family="system-ui, sans-serif" font-size="20" fill="#22C55E" fill-opacity="0.4">→</text>
+
+  <!-- Step 3 -->
+  <rect x="640" y="120" width="260" height="120" rx="16" fill="#22C55E" fill-opacity="0.08"/>
+  <rect x="640" y="120" width="260" height="120" rx="16" stroke="#22C55E" stroke-opacity="0.2"/>
+  <circle cx="674" cy="154" r="20" fill="#22C55E" fill-opacity="0.15"/>
+  <text x="674" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#22C55E">3</text>
+  <text x="704" y="160" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#F0FDF4">Тестирование</text>
+  <text x="664" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">Реальные устройства,</text>
+  <text x="664" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">настройка бота, деплой</text>
+  <rect x="664" y="226" width="60" height="4" rx="2" fill="#22C55E" fill-opacity="0.3"/>
+  <text x="732" y="232" font-family="system-ui, sans-serif" font-size="11" fill="#22C55E" fill-opacity="0.7">1 неделя</text>
+
+  <!-- Arrow 3-4 -->
+  <text x="918" y="184" font-family="system-ui, sans-serif" font-size="20" fill="#22C55E" fill-opacity="0.4">→</text>
+
+  <!-- Step 4 -->
+  <rect x="940" y="120" width="220" height="120" rx="16" fill="#22C55E" fill-opacity="0.12"/>
+  <rect x="940" y="120" width="220" height="120" rx="16" stroke="#22C55E" stroke-opacity="0.3"/>
+  <circle cx="974" cy="154" r="20" fill="#22C55E" fill-opacity="0.2"/>
+  <text x="974" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#22C55E">4</text>
+  <text x="1004" y="160" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#22C55E">Запуск!</text>
+  <text x="964" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">Мониторинг, поддержка,</text>
+  <text x="964" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.6">развитие продукта</text>
+  <rect x="964" y="226" width="100" height="4" rx="2" fill="#22C55E" fill-opacity="0.4"/>
+  <text x="1072" y="232" font-family="system-ui, sans-serif" font-size="11" fill="#22C55E" fill-opacity="0.7">∞</text>
+
+  <!-- Bottom stats -->
+  <rect x="120" y="300" width="280" height="160" rx="16" fill="#22C55E" fill-opacity="0.05"/>
+  <rect x="120" y="300" width="280" height="160" rx="16" stroke="#22C55E" stroke-opacity="0.12"/>
+  <text x="260" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="800" fill="#22C55E">3–6</text>
+  <text x="260" y="378" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#F0FDF4" fill-opacity="0.7">недель</text>
+  <text x="260" y="408" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.4">средний срок разработки</text>
+  <text x="260" y="428" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.4">Telegram Mini-App</text>
+
+  <rect x="460" y="300" width="280" height="160" rx="16" fill="#22C55E" fill-opacity="0.05"/>
+  <rect x="460" y="300" width="280" height="160" rx="16" stroke="#22C55E" stroke-opacity="0.12"/>
+  <text x="600" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="800" fill="#22C55E">30–40%</text>
+  <text x="600" y="378" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#F0FDF4" fill-opacity="0.7">экономия времени</text>
+  <text x="600" y="408" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.4">благодаря AI-ускоренной</text>
+  <text x="600" y="428" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.4">разработке</text>
+
+  <rect x="800" y="300" width="280" height="160" rx="16" fill="#22C55E" fill-opacity="0.05"/>
+  <rect x="800" y="300" width="280" height="160" rx="16" stroke="#22C55E" stroke-opacity="0.12"/>
+  <text x="940" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="800" fill="#22C55E">70%</text>
+  <text x="940" y="378" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#F0FDF4" fill-opacity="0.7">конверсия</text>
+  <text x="940" y="408" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.4">пользователей совершают</text>
+  <text x="940" y="428" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F0FDF4" fill-opacity="0.4">целевое действие</text>
+
+  <!-- D4O watermark -->
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#F0FDF4" fill-opacity="0.2" letter-spacing="2">D4O.TECH</text>
+</svg>

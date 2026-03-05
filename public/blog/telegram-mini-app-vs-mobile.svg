@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="680" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1210"/>
+      <stop offset="100%" stop-color="#0F1A14"/>
+    </linearGradient>
+    <linearGradient id="green-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+    <linearGradient id="dim-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2e22"/>
+      <stop offset="100%" stop-color="#162419"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bg)" rx="24"/>
+  <rect width="1200" height="680" fill="none" stroke="#22C55E" stroke-opacity="0.15" rx="24"/>
+
+  <!-- Title -->
+  <text x="600" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#F0FDF4">
+    Telegram Mini-App vs Мобильное приложение
+  </text>
+  <line x1="440" y1="72" x2="760" y2="72" stroke="url(#green-grad)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Left Column Header: Mini-App -->
+  <rect x="60" y="100" width="520" height="52" rx="12" fill="#22C55E" fill-opacity="0.15"/>
+  <rect x="60" y="100" width="520" height="52" rx="12" stroke="#22C55E" stroke-opacity="0.3"/>
+  <circle cx="92" cy="126" r="14" fill="#22C55E" fill-opacity="0.2"/>
+  <text x="92" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#22C55E">✓</text>
+  <text x="118" y="132" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#22C55E">
+    Telegram Mini-App
+  </text>
+
+  <!-- Right Column Header: Mobile App -->
+  <rect x="620" y="100" width="520" height="52" rx="12" fill="#ffffff" fill-opacity="0.03"/>
+  <rect x="620" y="100" width="520" height="52" rx="12" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="678" y="132" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#F0FDF4" fill-opacity="0.5">
+    Мобильное приложение
+  </text>
+
+  <!-- Row 1: Cost -->
+  <rect x="60" y="170" width="520" height="68" rx="12" fill="#22C55E" fill-opacity="0.06"/>
+  <text x="84" y="198" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#22C55E" text-transform="uppercase" letter-spacing="1">СТОИМОСТЬ</text>
+  <text x="84" y="222" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#F0FDF4">от 200 000 ₽</text>
+
+  <rect x="620" y="170" width="520" height="68" rx="12" fill="#ffffff" fill-opacity="0.02"/>
+  <text x="644" y="198" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F0FDF4" fill-opacity="0.4" letter-spacing="1">СТОИМОСТЬ</text>
+  <text x="644" y="222" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#F0FDF4" fill-opacity="0.5">от 1 000 000 ₽</text>
+
+  <!-- Row 2: Timeline -->
+  <rect x="60" y="252" width="520" height="68" rx="12" fill="#22C55E" fill-opacity="0.06"/>
+  <text x="84" y="280" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#22C55E" letter-spacing="1">СРОКИ</text>
+  <text x="84" y="304" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#F0FDF4">3–6 недель</text>
+
+  <rect x="620" y="252" width="520" height="68" rx="12" fill="#ffffff" fill-opacity="0.02"/>
+  <text x="644" y="280" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F0FDF4" fill-opacity="0.4" letter-spacing="1">СРОКИ</text>
+  <text x="644" y="304" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#F0FDF4" fill-opacity="0.5">3–6 месяцев</text>
+
+  <!-- Row 3: Installation -->
+  <rect x="60" y="334" width="520" height="68" rx="12" fill="#22C55E" fill-opacity="0.06"/>
+  <text x="84" y="362" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#22C55E" letter-spacing="1">УСТАНОВКА</text>
+  <text x="84" y="386" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#F0FDF4">Не нужна</text>
+
+  <rect x="620" y="334" width="520" height="68" rx="12" fill="#ffffff" fill-opacity="0.02"/>
+  <text x="644" y="362" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F0FDF4" fill-opacity="0.4" letter-spacing="1">УСТАНОВКА</text>
+  <text x="644" y="386" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#F0FDF4" fill-opacity="0.5">App Store / Google Play</text>
+
+  <!-- Row 4: Auth -->
+  <rect x="60" y="416" width="520" height="68" rx="12" fill="#22C55E" fill-opacity="0.06"/>
+  <text x="84" y="444" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#22C55E" letter-spacing="1">АВТОРИЗАЦИЯ</text>
+  <text x="84" y="468" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#F0FDF4">Мгновенная через Telegram</text>
+
+  <rect x="620" y="416" width="520" height="68" rx="12" fill="#ffffff" fill-opacity="0.02"/>
+  <text x="644" y="444" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F0FDF4" fill-opacity="0.4" letter-spacing="1">АВТОРИЗАЦИЯ</text>
+  <text x="644" y="468" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#F0FDF4" fill-opacity="0.5">Регистрация, подтверждение</text>
+
+  <!-- Row 5: Updates -->
+  <rect x="60" y="498" width="520" height="68" rx="12" fill="#22C55E" fill-opacity="0.06"/>
+  <text x="84" y="526" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#22C55E" letter-spacing="1">ОБНОВЛЕНИЯ</text>
+  <text x="84" y="550" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#F0FDF4">Мгновенные</text>
+
+  <rect x="620" y="498" width="520" height="68" rx="12" fill="#ffffff" fill-opacity="0.02"/>
+  <text x="644" y="526" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F0FDF4" fill-opacity="0.4" letter-spacing="1">ОБНОВЛЕНИЯ</text>
+  <text x="644" y="550" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#F0FDF4" fill-opacity="0.5">Релизный цикл (1–7 дней)</text>
+
+  <!-- Row 6: Moderation -->
+  <rect x="60" y="580" width="520" height="68" rx="12" fill="#22C55E" fill-opacity="0.06"/>
+  <text x="84" y="608" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#22C55E" letter-spacing="1">МОДЕРАЦИЯ</text>
+  <text x="84" y="632" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#F0FDF4">Не нужна</text>
+
+  <rect x="620" y="580" width="520" height="68" rx="12" fill="#ffffff" fill-opacity="0.02"/>
+  <text x="644" y="608" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F0FDF4" fill-opacity="0.4" letter-spacing="1">МОДЕРАЦИЯ</text>
+  <text x="644" y="632" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#F0FDF4" fill-opacity="0.5">App Store Review</text>
+</svg>
