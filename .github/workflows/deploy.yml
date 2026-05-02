@@ -1,49 +1,57 @@
-name: Deploy to VPS
+name: Deploy d4o-site to PROD
+
+# Деплой на PROD-сервер 147.45.212.217 (Timeweb-Москва).
+# Триггер: push в main или ручной запуск.
 
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout (для indexnow.mjs)
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy via rsync
-        uses: burnett01/rsync-deployments@7.0.1
-        with:
-          switches: -avz --delete --exclude='.env*' --exclude='node_modules' --exclude='.git' --exclude='.next/cache'
-          path: ./
-          remote_path: /root/d4o-site/
-          remote_host: ${{ secrets.VPS_HOST }}
-          remote_user: root
-          remote_key: ${{ secrets.VPS_SSH_KEY }}
-
-      - name: Install deps and restart
+      - name: Deploy via SSH (git pull + docker compose)
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.VPS_HOST }}
           username: root
           key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_SSH_PORT || 22 }}
+          command_timeout: 15m
+          script_stop: true
           script: |
-            cd /root/d4o-site
-            npm ci --production
-            pm2 restart d4o-site || pm2 start npm --name d4o-site -- start
-            pm2 save
+            set -e
+            cd /home/d4o-site
+
+            echo "=== git pull ==="
+            git fetch origin main
+            git reset --hard origin/main
+            git log --oneline -1
+
+            echo ""
+            echo "=== docker compose up -d --build ==="
+            docker compose up -d --build
+
+            echo ""
+            echo "=== health check ==="
+            sleep 5
+            for i in 1 2 3 4 5; do
+              if curl -sf -m 5 http://127.0.0.1:3000/ > /dev/null; then
+                echo "✅ d4o-site OK after $i attempt(s)"
+                exit 0
+              fi
+              echo "wait $i/5..."
+              sleep 3
+            done
+            echo "❌ d4o-site не отвечает на :3000"
+            docker compose logs --tail 50 app
+            exit 1
 
       - name: IndexNow — notify search engines
         run: node scripts/indexnow.mjs
