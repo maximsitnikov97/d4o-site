@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, Code2, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import maximPhoto from "../../../public/founder/maxim.jpg";
 
 const stats = [
   { value: "50+", label: "Запущенных продуктов" },
@@ -87,6 +89,28 @@ export function Hero() {
               </span>
             ))}
           </motion.div>
+
+          <motion.a
+            variants={fadeUp}
+            href="#founder"
+            className="mt-8 inline-flex items-center gap-3 rounded-full border border-border bg-card/60 py-1.5 pl-1.5 pr-4 transition-colors hover:border-forest/40 glass"
+          >
+            <span className="relative block h-11 w-11 overflow-hidden rounded-full border border-border">
+              <Image
+                src={maximPhoto}
+                alt="Максим Ситников — основатель D4O"
+                fill
+                sizes="44px"
+                className="object-cover object-[center_20%]"
+              />
+            </span>
+            <span className="leading-tight">
+              <span className="block text-sm font-semibold text-foreground">Максим Ситников</span>
+              <span className="block text-xs text-muted-foreground">
+                Основатель D4O · об основателе →
+              </span>
+            </span>
+          </motion.a>
 
         </motion.div>
 

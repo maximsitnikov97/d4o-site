@@ -7,6 +7,7 @@ import { WhyUs } from "@/components/sections/WhyUs";
 import { Process } from "@/components/sections/Process";
 import { Pricing } from "@/components/sections/Pricing";
 import { FAQ } from "@/components/sections/FAQ";
+import { Founder } from "@/components/sections/Founder";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 import { JsonLd } from "@/components/JsonLd";
@@ -25,6 +26,25 @@ const organizationJsonLd = {
     contactType: "sales",
     url: "https://t.me/masitnikov",
   },
+  founder: {
+    "@type": "Person",
+    name: "Максим Ситников",
+    jobTitle: "Главный инженер и основатель",
+  },
+};
+
+const founderJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Максим Ситников",
+  jobTitle: "Главный инженер и основатель",
+  worksFor: {
+    "@type": "Organization",
+    name: "D4O",
+    url: "https://d4o.tech",
+  },
+  image: "https://d4o.tech/founder/maxim.jpg",
+  sameAs: ["https://t.me/masitnikov", "https://giftshelf.ru"],
 };
 
 const websiteJsonLd = {
@@ -87,6 +107,7 @@ export default function Home() {
       <JsonLd data={organizationJsonLd} />
       <JsonLd data={websiteJsonLd} />
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={founderJsonLd} />
       <Header />
       <main>
         <Hero />
@@ -94,6 +115,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <WhyUs />
+        <Founder />
         <Process />
         <Pricing />
         <FAQ />

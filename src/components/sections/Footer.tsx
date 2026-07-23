@@ -5,6 +5,7 @@ const links = [
   { href: "#cases", label: "Кейсы" },
   { href: "#process", label: "Процесс" },
   { href: "#pricing", label: "Цены" },
+  { href: "#founder", label: "Об основателе" },
   { href: "#faq", label: "FAQ" },
   { href: "/blog", label: "Блог" },
   { href: "#contact", label: "Контакты" },
